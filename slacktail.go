@@ -19,7 +19,7 @@ type Spinner struct {
 }
 
 func (s *Spinner) Frame() string {
-	glyphs := [7]string{"|", "/", "-", "\\", "|", "/", "-"}
+	glyphs := [4]string{"|", "/", "-", "\\"}
 	tmp := glyphs[s.currIdx]
 	if s.currIdx == len(glyphs)-1 {
 		s.currIdx = 0
